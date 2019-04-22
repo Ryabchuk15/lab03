@@ -205,7 +205,7 @@ $ cmake --build _build --target example2
 ```ShellSession
 # Вывод библиотеки print
 $ ls -la _build/libprint.a
--rw-r--r-- 1 Ryabchuk Ryabchuk 3126 апр  6 17:41 _build/libprint.a
+-rw-r--r-- 1 Ryabchuk Ryabchuk 3115 апр  16 18:11 _build/libprint.a
 # Запуск и вывод example1
 $ _build/example1 && echo
 hello

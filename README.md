@@ -147,7 +147,7 @@ $ cmake -H. -B_build
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/usman/usman1011111/workspace/projects/lab03/_build
+-- Build files have been written to: /home/Ryabchuk/Ryabchuk15/workspace/projects/lab03/_build
 # сборка проекта _build
 $ cmake --build _build
 Scanning dependencies of target print
@@ -179,7 +179,7 @@ EOF
 $ cmake --build _build
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/usman/usman1011111/workspace/projects/lab03/_build
+-- Build files have been written to: /home/Ryabchuk/Ryabchuk15/workspace/projects/lab03/_build
 [ 33%] Built target print
 Scanning dependencies of target example2
 [ 50%] Building CXX object CMakeFiles/example2.dir/examples/example2.cpp.o
@@ -205,7 +205,7 @@ $ cmake --build _build --target example2
 ```ShellSession
 # Вывод библиотеки print
 $ ls -la _build/libprint.a
--rw-r--r-- 1 usman usman 3126 апр  6 17:41 _build/libprint.a
+-rw-r--r-- 1 Ryabchuk Ryabchuk 3126 апр  6 17:41 _build/libprint.a
 # Запуск и вывод example1
 $ _build/example1 && echo
 hello
@@ -238,17 +238,17 @@ $ cat CMakeLists.txt
 $ cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/usman/usman1011111/workspace/projects/lab03/_build
+-- Build files have been written to: /home/Ryabchuk/Ryabchuk15/workspace/projects/lab03/_build
 # Запуск instal
 $ cmake --build _build --target install
 [100%] Built target print
 Install the project...
 -- Install configuration: ""
--- Installing: /home/usman/usman1011111/workspace/projects/lab03/_install/lib/libprint.a
--- Installing: /home/usman/usman1011111/workspace/projects/lab03/_install/include
--- Installing: /home/usman/usman1011111/workspace/projects/lab03/_install/include/print.hpp
--- Installing: /home/usman/usman1011111/workspace/projects/lab03/_install/cmake/print-config.cmake
--- Installing: /home/usman/usman1011111/workspace/projects/lab03/_install/cmake/print-config-noconfig.cmake
+-- Installing: /home/Ryabchuk/Ryabchuk15/workspace/projects/lab03/_install/lib/libprint.a
+-- Installing: /home/Ryabchuk/Ryabchuk15/workspace/projects/lab03/_install/include
+-- Installing: /home/Ryabchuk/Ryabchuk15/workspace/projects/lab03/_install/include/print.hpp
+-- Installing: /home/Ryabchuk/Ryabchuk15/workspace/projects/lab03/_install/cmake/print-config.cmake
+-- Installing: /home/Ryabchuk/Ryabchuk15/workspace/projects/lab03/_install/cmake/print-config-noconfig.cmake
 # Дерево директории _install
 $ tree _install
 _install

@@ -25,7 +25,7 @@ $ pushd .
 ~/Ryabchuk15/workspace ~/Ryabchuk15/workspace
 $ source scripts/activate
 ```
-
+### Копируем файлы из удаленного репозитория lab02 в локальный репозиторий, переходим в него, удаляем URL lab02 и сохраняем URL lab03
 ```ShellSession
 $ git clone https://github.com/${GITHUB_USERNAME}/lab02.git projects/lab03
 Клонирование в «projects/lab03»…
@@ -39,7 +39,7 @@ $ cd projects/lab03
 $ git remote remove origin
 $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab03.git
 ```
-
+### Запуск кодов полученных файло
 ```ShellSession
 $ g++ -std=c++11 -I./include -c sources/print.cpp
 $ ls print.o
@@ -89,14 +89,14 @@ $ ./example2
 $ cat log.txt && echo
 hello
 ```
-
+### Удаление объектных файлов и исполняемых файлов
 ```ShellSession
 $ rm -rf example1.o example2.o print.o
 $ rm -rf print.a
 $ rm -rf example1 example2
 $ rm -rf log.txt
 ```
-
+### Заполнение файла CMakeLists.txt
 ```ShellSession
 $ cat > CMakeLists.txt <<EOF
 # определение минимальной версии cmake
@@ -128,7 +128,7 @@ $ cat >> CMakeLists.txt <<EOF
 include_directories(\${CMAKE_CURRENT_SOURCE_DIR}/include)
 EOF
 ```
-
+### Сборка _build
 ```ShellSession
 $ cmake -H. -B_build
 -- The C compiler identification is GNU 8.2.0
@@ -155,7 +155,7 @@ Scanning dependencies of target print
 [100%] Linking CXX static library libprint.a
 [100%] Built target print
 ```
-
+### Указываем файлы, принадлежащие проектам
 ```ShellSession
 $ cat >> CMakeLists.txt <<EOF
 
@@ -163,7 +163,7 @@ add_executable(example1 \${CMAKE_CURRENT_SOURCE_DIR}/examples/example1.cpp)
 add_executable(example2 \${CMAKE_CURRENT_SOURCE_DIR}/examples/example2.cpp)
 EOF
 ```
-
+### Указываем библиотеки
 ```ShellSession
 $ cat >> CMakeLists.txt <<EOF
 

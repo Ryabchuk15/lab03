@@ -18,7 +18,7 @@ $ open https://cmake.org/
 ```ShellSession
 $ export GITHUB_USERNAME=Ryabchuk15
 ```
-# Переходим в рабочую директорию и запускаем скриптовый файл
+### Переходим в рабочую директорию и запускаем скриптовый файл
 ```ShellSession
 $ cd ${GITHUB_USERNAME}/workspace
 $ pushd .

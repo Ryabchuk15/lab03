@@ -16,7 +16,7 @@ $ open https://cmake.org/
 ## Tutorial
 
 ```ShellSession
-$ export GITHUB_USERNAME=<Ryabchuk15>
+$ export GITHUB_USERNAME=Ryabchuk15
 ```
 
 ```ShellSession
